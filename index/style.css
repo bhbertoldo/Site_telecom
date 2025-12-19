@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background: #e4e4f5;
+    color: #000000;
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* Título principal */
+#Titulo {
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #525151, #ffffff);
+    color: rgb(0, 0, 0);
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(58, 50, 50, 0.15);
+    transition: transform 0.3s;
+}
+
+#Titulo h1 {
+    font-size: 2.8em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Subtítulos */
+h2 {
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #34a853;
+    padding-bottom: 7px;
+    font-size: 1.8em;
+    transition: color 0.3s;
+}
+
+h2:hover {
+    color: #34a853;
+}
+
+/* Parágrafos */
+.paragrafo1 {
+    margin-bottom: 20px;
+    font-size: 1.15em;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-left: 5px solid #bbafaf;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Listas */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #34a853;
+    font-weight: bold;
+}
+
+/* Imagens */
+#foto1, #foto2 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+#foto1:hover, #foto2:hover {
+    transform: scale(1.03);
+}
+
+/* Divs de seção */
+#subtitulo1, #subtitulo2, #subtitulo3, div {
+    background-color: #f8f1f1;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: transform 0.2s;
+}
+
+#subtitulo1:hover, #subtitulo2:hover, #subtitulo3:hover, div:hover {
+    transform: translateY(-3px);
+}
+
+/* Strong destacado */
+strong {
+    color: #34a853;
+}
